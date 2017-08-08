@@ -3,3 +3,6 @@
 /home/jackjia/Dropbox/workspace/llvm/project/pass/build/skeleton/CMakeFiles/edit_cache.dir
 /home/jackjia/Dropbox/workspace/llvm/project/pass/build/skeleton/CMakeFiles/rebuild_cache.dir
 /home/jackjia/Dropbox/workspace/llvm/project/pass/build/skeleton/CMakeFiles/SkeletonPass.dir
+/home/jackjia/Dropbox/workspace/llvm/project/pass/build/count_bb/CMakeFiles/rebuild_cache.dir
+/home/jackjia/Dropbox/workspace/llvm/project/pass/build/count_bb/CMakeFiles/edit_cache.dir
+/home/jackjia/Dropbox/workspace/llvm/project/pass/build/count_bb/CMakeFiles/CountBB.dir

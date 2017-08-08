@@ -123,6 +123,19 @@ SkeletonPass/fast:
 	$(MAKE) -f skeleton/CMakeFiles/SkeletonPass.dir/build.make skeleton/CMakeFiles/SkeletonPass.dir/build
 .PHONY : SkeletonPass/fast
 
+#=============================================================================
+# Target rules for targets named CountBB
+
+# Build rule for target.
+CountBB: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 CountBB
+.PHONY : CountBB
+
+# fast build rule for target.
+CountBB/fast:
+	$(MAKE) -f count_bb/CMakeFiles/CountBB.dir/build.make count_bb/CMakeFiles/CountBB.dir/build
+.PHONY : CountBB/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -132,6 +145,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SkeletonPass"
+	@echo "... CountBB"
 .PHONY : help
 
 

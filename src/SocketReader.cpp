@@ -134,7 +134,9 @@ int main()
 {
     // Create an instance of the SocketReaderNode and connect it to PolySync
     SocketReaderNode socketReaderNode;
-    //socketReaderNode.setNodeName(NODE_NAME);
+    int i = 1;
+    i=i+1;
+    socketReaderNode.setNodeName(NODE_NAME);
     socketReaderNode.connectPolySync();
 
     return 0;

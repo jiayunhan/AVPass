@@ -35,6 +35,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/jackjia/Dropbox/workspace/llvm/project/pass/build/skeleton/cmake_install.cmake")
+  include("/home/jackjia/Dropbox/workspace/llvm/project/pass/build/count_bb/cmake_install.cmake")
 
 endif()
 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC   -shared  -o libCountBB.so CMakeFiles/CountBB.dir/CountBB.cpp.o  -L/usr/lib/llvm-3.8/lib 

@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -fno-rtti -std=gnu++11
 
 CXX_DEFINES = -DSkeletonPass_EXPORTS -D__STDC_CONSTANT_MACROS -D__STDC_LIMIT_MACROS
 
-CXX_INCLUDES = -I/usr/local/include 
+CXX_INCLUDES = -I/usr/lib/llvm-3.8/include 
 

@@ -13,6 +13,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.5.1/CMakeSystem.cmake"
   "CMakeFiles/feature_tests.c"
   "CMakeFiles/feature_tests.cxx"
+  "../count_bb/CMakeLists.txt"
   "../skeleton/CMakeLists.txt"
   "/usr/local/share/llvm/cmake/LLVM-Config.cmake"
   "/usr/local/share/llvm/cmake/LLVMConfig.cmake"
@@ -113,9 +114,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.5.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "skeleton/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "count_bb/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "skeleton/CMakeFiles/SkeletonPass.dir/DependInfo.cmake"
+  "count_bb/CMakeFiles/CountBB.dir/DependInfo.cmake"
   )

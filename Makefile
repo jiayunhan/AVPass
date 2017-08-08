@@ -5,7 +5,8 @@ PSYNC_HOME = /usr/local/polysync
 ROS_HOME = /opt/ros/kinetic
 AUTOWARE_HOME = /
 PASS_NAME = skeleton
-PASS = /home/jackjia/Dropbox/workspace/llvm/project/pass/build/skeleton/libSkeletonPass.so
+PASS = /home/jackjia/Dropbox/workspace/llvm/branches/llvm-pass-skeleton/build/skeleton/libSkeletonPass.so
+
 INC=-I $(PSYNC_HOME)/include \
 	-I $(PSYNC_HOME)/include/deps \
 	-I $(PSYNC_HOME)/include/deps/dcps/C/SAC \
@@ -30,8 +31,11 @@ BYTECODES = $(addprefix bin/,$(notdir $(SOURCES:.cpp=.bc)))
 bc:$(BYTECODES)
 		echo "==Complete==\n"
 
+#pass:$(BYTECODES)
+#	opt -load $(PASS) -$(PASS_NAME) < $^ > code-inst.bc
+
 pass:$(BYTECODES)
-	opt -load $(PASS) -$(PASS_NAME) < bin/SocketReader.bc > code-inst.bc
+	@$(foreach bc,$(BYTECODES),opt -load $(PASS) -$(PASS_NAME) < $(bc) > code-inst.bc;)
 
 
 bin/%.bc:src/%.cpp
